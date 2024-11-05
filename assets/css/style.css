@@ -3070,7 +3070,11 @@ hr {
   .section-tittle h2 {
     text-align: start;
     font-size: 20px;
+    /* margin-top: 0% !important; */
   }
+  .all-page-style {
+    padding: 2px 50px;
+}
 }
 
 /* line 957, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
@@ -3582,7 +3586,7 @@ hr {
 
 /* line 18, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_h1-hero.scss */
 .slider-height2 {
-  height: 170px;
+  height: 150px;
   background-size: cover;
 }
 
@@ -3590,7 +3594,7 @@ hr {
 
   /* line 18, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_h1-hero.scss */
   .slider-height2 {
-    height: 350px;
+    height: 130px;
   }
 }
 
@@ -3598,7 +3602,7 @@ hr {
 
   /* line 18, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_h1-hero.scss */
   .slider-height2 {
-    height: 250px;
+    height: 130px;
   }
 }
 
@@ -3606,7 +3610,7 @@ hr {
 
   /* line 18, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_h1-hero.scss */
   .slider-height2 {
-    height: 250px;
+    height: 130px;
   }
 }
 
@@ -8625,7 +8629,45 @@ del {
   }
 }
 
-/* .order-images{
-  padding-left: 3px;
-  padding-right: 3px;
+@media (max-width: 575px) {
+  .top-heading{
+    font-size: 25px !important;
+    margin-top: 0%;
+  }
+}
+
+@media (max-width: 575px) {
+  .eduction-discription{
+    padding-left: 20px !important;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .eduction-discription{
+    padding-left: 20px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .eduction-discription{
+    padding-left: 20px !important;
+  }
+}
+
+/* .eduction-img{
+  width: 400px !important;
+  height: 400px;
 } */
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .team-img a{
+    height: 500px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .team-img a{
+    height: 500px !important;
+  }
+}
