@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="login_styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <div class="container p-0">
+      <div class="col-left">
+        <div class="login-text">
+          <h2>Welcome on NGO</h2>
+          <img id="logo-bg" src="logo-bg.png" alt="logo">
+        </div>
+      </div>
+      <div class="col-right">
+        <div class="login-form">
+          <h2 id="white-text">Create your accounts</h2>
+          <h2>Login</h2>
+          <form action="../adminPanal/dashboard.html">
+            <div class="form-input">
+              <label>Username or email address<span>*</span></label>
+              <input type="text" placeholder="Username or Email" required>
+            </div>
+            <div class="form-input">
+              <label>Password<span>*</span></label>
+              <input type="password" id="password" placeholder="Password" required>
+              <i class="fa-regular fa-eye" id="togglePassword"></i>
+              <!-- <i class="fa-regular fa-eye-slash" id="togglePasswordSlash" style="display: none;"></i> -->
+            </div>
+            <p>
+              <input type="submit" value="Sing In" />
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    togglePassword.addEventListener('click', function () {
+      if($(this).hasClass("fa-eye")){
+        $(this).removeClass("fa-eye");
+        $(this).addClass("fa-eye-slash");
+        $('#password').attr('type','type');
+      }else{
+        $(this).removeClass("fa-eye-slash");
+        $(this).addClass("fa-eye");
+        $('#password').attr('type','password');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
