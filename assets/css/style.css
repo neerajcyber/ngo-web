@@ -3004,7 +3004,7 @@ hr {
 
   /* line 913, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
   .section-tittle {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     text-align: center !important;
   }
 }
@@ -3013,7 +3013,7 @@ hr {
 
   /* line 913, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
   .section-tittle {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 }
 
@@ -3069,7 +3069,8 @@ hr {
   /* line 936, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_common.scss */
   .section-tittle h2 {
     text-align: start;
-    font-size: 20px;
+    font-size: 30px;
+    letter-spacing: 0px;
     /* margin-top: 0% !important; */
   }
   .all-page-style {
@@ -3696,11 +3697,15 @@ hr {
 }
 
 @media (max-width: 575px) {
+  .hero__caption{
+    padding:0px 40px;
+  }
+}
 
-  /* line 77, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_h1-hero.scss */
-  /* .hero__caption p {
-    padding-right: 56px;
-  } */
+@media (max-width: 575px) {
+  .order-images{
+    padding:0px 25px;
+  }
 }
 
 /* line 84, C:/Users/HP/Desktop/jun-2020/277.Charity _Non-profit/assets/scss/_h1-hero.scss */
@@ -8669,5 +8674,45 @@ del {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .team-img a{
     height: 500px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .police-come{
+    padding-left: 0% !important;
+    padding-bottom: 0% !important;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .police-come{
+    padding-left: 0% !important;
+    padding-bottom: 0% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .police-come{
+    padding-left: 0% !important;
+    padding-bottom: 0% !important;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .single-team{
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .single-team{
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-team{
+    width: 100% !important;
   }
 }
