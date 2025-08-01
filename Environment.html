@@ -3,18 +3,17 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8FX360NPNQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8FX360NPNQ');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FX360NPNQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8FX360NPNQ');
+  </script>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>NGO</title>
-  <meta name="description" content="" />
+  <title>Benevolent Trust - Environment Initiatives</title>
+  <meta name="description" content="Benevolent Trust's environmental initiatives including tree plantation drives and awareness programs" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="manifest" href="site.webmanifest" />
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -34,6 +33,101 @@
   <link rel="stylesheet" href="assets/css/slick.css" />
   <link rel="stylesheet" href="assets/css/nice-select.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <style>
+    /* Custom styles for environment page */
+    .environment-section {
+      padding: 80px 0;
+    }
+    
+    .event-card {
+      margin-bottom: 60px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .event-description {
+      padding: 30px;
+    }
+    
+    .event-description h2 {
+      color: #2a7d2e;
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 1.4;
+    }
+    
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+    }
+    
+    .gallery-item {
+      flex: 0 0 25%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    
+    .gallery-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery-img:hover {
+      transform: scale(1.03);
+    }
+    
+    @media (max-width: 992px) {
+      .gallery-item {
+        flex: 0 0 50%;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .gallery-item {
+        flex: 0 0 100%;
+      }
+      
+      .event-description {
+        padding: 20px;
+      }
+      
+      .event-description h2 {
+        font-size: 20px;
+      }
+    }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    .section-title h2 {
+      color: #2a7d2e;
+      font-size: 36px;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 15px;
+    }
+    
+    .section-title h2:after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 3px;
+      background: #2a7d2e;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
 </head>
 
 <body>
@@ -42,7 +136,7 @@
       <div class="preloader-inner position-relative">
         <div class="preloader-circle"></div>
         <div class="preloader-img pere-text">
-          <img src="assets/img/logo/logo.png" alt="" />
+          <img src="assets/img/logo/logo.png" alt="Benevolent Trust Logo" />
         </div>
       </div>
     </div>
@@ -56,12 +150,12 @@
             <div class="row align-items-center">
               <div class="col-xl-2 col-lg-2">
                 <div class="logo d-flex align-items-center">
-                  <a href="index.html"><img src="assets/img/logo/logo.png" alt="" /></a>
+                  <a href="index.html"><img src="assets/img/logo/logo.png" alt="Benevolent Trust Logo" /></a>
                   <div class="social-icons ml-3">
-                    <a href="https://www.instagram.com/benevolenttrust/" target="_blank">
+                    <a href="https://www.instagram.com/benevolenttrust/" target="_blank" aria-label="Instagram">
                       <i class="fab fa-instagram" style="font-size: 24px; color: #E4405F;"></i>
                     </a>
-                    <a href="https://www.facebook.com/share/1FKWZPLwLV/" target="_blank" class="ml-2">
+                    <a href="https://www.facebook.com/share/1FKWZPLwLV/" target="_blank" class="ml-2" aria-label="Facebook">
                       <i class="fab fa-facebook" style="font-size: 24px; color: #1877F2;"></i>
                     </a>
                   </div>
@@ -75,9 +169,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li>
-                          <a href="program.html" style="color: black; text-decoration: none; font-size: 16px;"
-                            onmouseover="this.style.color='green'; this.style.fontSize='20px';"
-                            onmouseout="this.style.color='black'; this.style.fontSize='16px';">
+                          <a href="program.html" class="nav-link-hover">
                             Upcoming Event
                           </a>
                         </li>
@@ -97,281 +189,120 @@
     </div>
   </header>
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  
-  <!-- header end -->
   <main>
-    <!--? Hero Start -->
+    <!-- Hero Section -->
     <div class="slider-area2">
       <div class="slider-height2 d-flex align-items-center">
         <div class="container">
           <div class="row">
             <div class="col-xl-12">
               <div class="hero-cap hero-cap2 pt-20 text-center">
-                <h2>Health</h2>
+                <h2>Environmental Initiatives</h2>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
- 
-
-    <div class="team-area pt-160 pb-160 all-page-style">
-      <div class="eduction-discription" style="padding-left: 130px;">
-        <h2> Organized an eye camp at Sarjamda on 21/02/2022 in association with Purnima Netralaya. </h2>
+    
+    <!-- Environment Programs Section -->
+    <div class="environment-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Tree Plantation Drives</h2>
+        </div>
+        
+        <!-- Event 1 -->
+        <div class="event-card">
+          <div class="event-description">
+            <h2>जुगसलाई विधानसभा क्षेत्र के प्लासबनी गांव में बिदू चांदान ट्रस्ट फॉर ट्राइबल सेल्फ एंपावरमेंट के सहयोग से एक सांस्कृतिक कार्यक्रम एवं वृक्षारोपण कार्यक्रम आयोजन किया गया।</h2>
+            <p>A cultural program and tree plantation drive was organized in Plasbani village of Jugsalai assembly constituency in collaboration with Bidhu Chandan Trust for Tribal Self Empowerment.</p>
+          </div>
+          <div class="image-gallery">
+            <div class="gallery-item">
+              <img src="assets/img/Health/e3.jpeg" alt="Tree plantation event in Plasbani village" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/Health/e2.jpeg" alt="Participants planting trees" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/Health/e1.jpeg" alt="Cultural program during the event" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/Health/e4.jpeg" alt="Group photo after tree plantation" class="gallery-img">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Event 2 -->
+        <div class="event-card">
+          <div class="event-description">
+            <h2>शहीद स्मारक समिति के सहयोग से पटमदा डिग्री कॉलेज, जाल्ला के मैट्रिक और इंटर के छात्र छात्रों को पौधा देकर सम्मानित किया जाएगा और बाद में वृक्षारोपण का कार्यक्रम आयोजन किया गया।</h2>
+            <p>In collaboration with Shaheed Smark Samiti, students of Patmada Degree College, Jalla were honored with saplings followed by a tree plantation program.</p>
+          </div>
+          <div class="image-gallery">
+            <div class="gallery-item">
+              <img src="assets/img/Health/en1.jpeg" alt="Students receiving saplings at Patmada College" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/Health/en2.jpeg" alt="Tree plantation at college campus" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/Health/en3.jpeg" alt="Participants in the plantation drive" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/Health/en4.jpeg" alt="Group photo with students" class="gallery-img">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Event 3 -->
+        <div class="event-card">
+          <div class="event-description">
+            <h2>आदर्श सोसाइटी के सहयोग से टेल्को, बारीनगर में वृक्षारोपण का कार्यक्रम आयोजन किया गया।</h2>
+            <p>A tree plantation program was organized in Telco, Barinagar with the support of Aadarsh Society.</p>
+          </div>
+          <div class="image-gallery">
+            <div class="gallery-item">
+              <img src="assets/img/Health/een1.jpeg" alt="Tree plantation in Telco area" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/Health/een2.jpeg" alt="Volunteers planting trees" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/Health/een3.jpeg" alt="Community participation in plantation drive" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/Health/een4.jpeg" alt="Newly planted saplings" class="gallery-img">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Event 4 -->
+        <div class="event-card">
+          <div class="event-description">
+            <h2>सरायकेला खरसवां के डिबाडीह गांव (राजनगर प्रखंड) में वीर शहीद दिबाकिसुन समिति के सहयोग से वृक्षारोपण का कार्यक्रम किया गया।</h2>
+            <p>A tree plantation program was conducted in Dibadih village (Rajnagar block) of Seraikela Kharsawan with the cooperation of Veer Shaheed Dibakisun Committee.</p>
+          </div>
+          <div class="image-gallery">
+            <div class="gallery-item">
+              <img src="assets/img/Health/ennn1.jpeg" alt="Plantation drive in Dibadih village" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/Health/ennn2.jpeg" alt="Villagers participating in plantation" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/Health/ennn3.jpeg" alt="Community members planting trees" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+              <img src="assets/img/Health/ennn4.jpeg" alt="Group photo after successful plantation" class="gallery-img">
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="row justify-content-center">
-
-        <div class="col-lg-2 mb-4 eduction-img" style="padding-left: 0px;">
-          <div class="single-team">
-            <div class="team-img">
-              <a href="Education.html">
-                <img src="assets/img/Health/health1.jpeg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 mb-4 eduction-img" style="padding-left: 0px;">
-          <div class="single-team">
-            <div class="team-img">
-              <a href="Social.html">
-                <img src="assets/img/Health/health2.jpeg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 mb-4 eduction-img" style="padding-left: 0px;">
-          <div class="single-team">
-            <div class="team-img">
-              <a href="Health.html">
-                <img src="assets/img/Health/health3.jpeg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h2 class="police-come" style="padding-left: 130px; ">Cheif Guest - Mr. Subhash Chandra Jat
-        (City SP, Jamshedpur) </h2>
     </div>
-
-    <div class="team-area pt-160 pb-160 all-page-style">
-      <div class="education-description">
-        <div class="content-container">
-          <h1 class="title">AIDS Awareness Program</h1>
-          <h2 class="subtitle">On the Eve of World AIDS Day, 2024</h2>
-          <p class="theme">Theme: Bringing Attention to the Challenge</p>
-          <div class="details">
-          </div>
-          <h3 class="program-title">Program Description</h3>
-          <p><strong>Presided By:</strong> Amarjeet Singh (President - UTTHAAN CBO)</p>
-          <h4 class="guest-title">Guest of Honour</h4>
-          <p>Dr. Ravi Kaushal (Neurologist, TMH)</p>
-          <p>Kulwinder Singh Pannu (President - Jamshedpur Truck and Trailer Owner Association and Trustee - Benevolent
-            Education and Social Trust (BEST))</p>
-          <div class="organizers">
-            <p><strong>Organized By:</strong> UTTHAAN CBO</p>
-            <p><strong>Supported By:</strong> Benevolent Education and Social Trust (BEST)</p>
-          </div>
-        </div>
-      </div>
-
-      <style>
-        .education-description {
-          display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          /* Align content to the top */
-
-          margin-top: 5px;
-          /* Set margin from the top */
-          height: auto;
-          /* Ensure the height is based on content and not forced to full screen */
-        }
-
-        .content-container {
-          background: #f8fcff;
-          /* Updated background color */
-          padding: 20px;
-          max-width: 1000px;
-          /* Increased max-width to 1000px */
-          width: 100%;
-          /* Ensure content uses full width within max-width */
-          box-sizing: border-box;
-          /* Removed the box-shadow */
-        }
-
-        /* Text Styling */
-        .title {
-          text-align: center;
-          text-transform: uppercase;
-          margin-bottom: 20px;
-        }
-
-        .subtitle {
-          text-align: center;
-
-        }
-
-        .theme {
-          font-style: italic;
-          font-weight: bold;
-          margin: 10px 0;
-          text-align: center;
-        }
-
-
-        .organizers {
-          margin-top: 20px;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-          .content-container {
-            padding: 15px;
-            max-width: 98%;
-            /* Increased max-width to 98% on mobile */
-          }
-        }
-
-        /* Optional: Adjust for very small devices */
-        @media (max-width: 480px) {
-          .content-container {
-            padding: 10px;
-            max-width: 100%;
-            /* Increased to 100% width on very small devices */
-          }
-        }
-      </style>
-
-      <div class="row justify-content-center" style="margin-top: 10px;">
-
-        <div class="col-lg-2 mb-4 eduction-img"
-          style="padding-left: 0px;display: flex; justify-content: center; align-items: center;">
-          <div class="single-team" style="height: 100%;">
-            <div class="team-img" style="height: 100%;">
-              <a href="Education.html" style="height: 200px; display: flex;">
-                <img style="object-fit: cover;" src="assets/img/Health/AIDSDAY1.jpeg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 mb-4 eduction-img"
-          style="padding-left: 0px;display: flex; justify-content: center; align-items: center;">
-          <div class="single-team" style="height: 100%;">
-            <div class="team-img" style="height: 100%;">
-              <a href="Social.html" style="height: 200px; display: flex;">
-                <img style="object-fit: cover;" src="assets/img/Health/AIDSDAY2.jpeg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 mb-4 eduction-img"
-          style="padding-left: 0px;display: flex; justify-content: center; align-items: center;">
-          <div class="single-team" style="height: 100%;">
-            <div class="team-img" style="height: 100%;">
-              <a href="Health.html" style="height: 200px; display: flex;">
-                <img style="object-fit: cover;" src="assets/img/Health/AIDSDAY3.jpeg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 mb-4 eduction-img"
-          style="padding-left: 0px;display: flex; justify-content: center; align-items: center;">
-          <div class="single-team" style="height: 100%;">
-            <div class="team-img" style="height: 100%;">
-              <a href="Sports.html" style="height: 200px; display: flex;">
-                <img style="object-fit: cover;" src="assets/img/Health/AIDSDAY4.jpeg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 mb-4 eduction-img"
-          style="padding-left: 0px;display: flex; justify-content: center; align-items: center;">
-          <div class="single-team" style="height: 100%;">
-            <div class="team-img" style="height: 100%;">
-              <a href="Environment.html" style="height: 200px; display: flex;">
-                <img style="object-fit: cover;" src="assets/img/Health/AIDSDAY5.jpeg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row justify-content-center">
-
-        <div class="col-lg-2 mb-4 eduction-img"
-          style="padding-left: 0px;display: flex; justify-content: center; align-items: center;">
-          <div class="single-team" style="height: 100%;">
-            <div class="team-img" style="height: 100%;">
-              <a href="Education.html" style="height: 200px; display: flex;">
-                <img style="object-fit: cover;" src="assets/img/Health/AIDSDAY6.jpeg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 mb-4 eduction-img"
-          style="padding-left: 0px;display: flex; justify-content: center; align-items: center;">
-          <div class="single-team" style="height: 100%;">
-            <div class="team-img" style="height: 100%;">
-              <a href="Social.html" style="height: 200px; display: flex;">
-                <img style="object-fit: cover;" src="assets/img/Health/AIDSDAY7.jpeg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 mb-4 eduction-img"
-          style="padding-left: 0px;display: flex; justify-content: center; align-items: center;">
-          <div class="single-team" style="height: 100%;">
-            <div class="team-img" style="height: 100%;">
-              <a href="Health.html" style="height: 200px; display: flex;">
-                <img style="object-fit: cover;" src="assets/img/Health/AIDSDAY8.jpeg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 mb-4 eduction-img"
-          style="padding-left: 0px;display: flex; justify-content: center; align-items: center;">
-          <div class="single-team" style="height: 100%;">
-            <div class="team-img" style="height: 100%;">
-              <a href="Sports.html" style="height: 200px; display: flex;">
-                <img style="object-fit: cover;" src="assets/img/Health/AIDSDAY9.jpeg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-2 mb-4 eduction-img"
-          style="padding-left: 0px;display: flex; justify-content: center; align-items: center;">
-          <div class="single-team" style="height: 100%;">
-            <div class="team-img" style="height: 100%;">
-              <a href="Environment.html" style="height: 200px; display: flex;">
-                <img style="object-fit: cover;" src="assets/img/Health/AIDSDAY10.jpeg" alt="" class="img-fluid" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h4 class="guest-title" style="text-align: center;  font-size: 2.0rem; ">Chief Guest - Dr. Sahir Pall (Civil
-        Surgeon cum CMO, East Singhbhum, Jharkhand)</h4>
-      </p>
-
-
-      <div class="row justify-content-center">
-
   </main>
+
   <footer>
     <div class="footer-wrapper section-bg2" data-background="assets/img/gallery/footer_bg.png">
       <!-- Footer Top-->
@@ -383,7 +314,7 @@
                 <div class="single-footer-caption mb-30">
                   <div class="footer-tittle">
                     <div class="footer-logo mb-20">
-                      <a href="index.html"><img src="assets/img/logo/logo.png" alt="" style="border-radius: 50%;" /></a>
+                      <a href="index.html"><img src="assets/img/logo/logo.png" alt="Benevolent Trust Logo" style="border-radius: 50%;" /></a>
                     </div>
                   </div>
                 </div>
@@ -426,18 +357,16 @@
         <div class="container">
           <div class="footer-border">
             <div class="row d-flex justify-content-center align-items-center">
-
               <div class="col">
                 <div class="footer-social d-flex justify-content-center">
-                  <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
                   <a href="https://www.facebook.com/profile.php?id=100085929879080&mibextid=ZbWKwL" target="_blank"
-                    title="Visit my Facebook profile">
+                    title="Visit our Facebook profile" aria-label="Facebook">
                     <i class="fab fa-facebook-f"></i>
                   </a>
-                  <a href="https://www.instagram.com/benevolenttrust?utm_source=qr&igsh=dXhqNXE5b2g2M2lx" target="_blank" title="Visit my Instagram profile">
+                  <a href="https://www.instagram.com/benevolenttrust?utm_source=qr&igsh=dXhqNXE5b2g2M2lx" target="_blank" 
+                     title="Visit our Instagram profile" aria-label="Instagram" class="ml-3">
                     <i class="fab fa-instagram"></i>
-                </a>
-                
+                  </a>
                 </div>
               </div>
             </div>
@@ -449,11 +378,10 @@
 
   <!-- Scroll Up -->
   <div id="back-top">
-    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    <a title="Go to Top" href="#" aria-label="Scroll to top"> <i class="fas fa-level-up-alt"></i></a>
   </div>
 
   <!-- JS here -->
-
   <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
   <!-- Jquery, Popper, Bootstrap -->
   <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
