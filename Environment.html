@@ -2,146 +2,173 @@
 <html class="no-js" lang="zxx">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FX360NPNQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-8FX360NPNQ');
-  </script>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>Benevolent Trust - Environment Initiatives</title>
   <meta name="description" content="Benevolent Trust's environmental initiatives including tree plantation drives and awareness programs" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="manifest" href="site.webmanifest" />
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
-  <!-- CSS here -->
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="assets/css/slicknav.css" />
-  <link rel="stylesheet" href="assets/css/flaticon.css" />
-  <link rel="stylesheet" href="assets/css/progressbar_barfiller.css" />
-  <link rel="stylesheet" href="assets/css/gijgo.css" />
-  <link rel="stylesheet" href="assets/css/animate.min.css" />
-  <link rel="stylesheet" href="assets/css/animated-headline.css" />
-  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
-  <link rel="stylesheet" href="assets/css/themify-icons.css" />
-  <link rel="stylesheet" href="assets/css/slick.css" />
-  <link rel="stylesheet" href="assets/css/nice-select.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  
+
   <style>
-    /* Custom styles for environment page */
-    .environment-section {
-      padding: 80px 0;
+    /* Section Title */
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
     }
-    
+    .section-title h2 {
+      color: #2a7d2e;
+      font-size: 38px;
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 15px;
+    }
+    .section-title h2:after {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 4px;
+      background: #2a7d2e;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+
+    /* ✅ Centered Banner */
+    .env-banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      overflow: hidden;
+      margin: 0 auto 40px;
+    }
+    .env-banner img {
+      max-width: 100%;
+      height: auto;
+      max-height: 550px;
+      border-radius: 8px;
+    }
+    @media (max-width: 768px) {
+      .env-banner img { max-height: 300px; }
+    }
+
+    /* Cards */
+    .environment-section {
+      padding: 30px 0 80px;
+    }
     .event-card {
-      margin-bottom: 60px;
+      margin-bottom: 50px;
       background: #f9f9f9;
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     }
-    
     .event-description {
-      padding: 30px;
+      padding: 25px;
     }
-    
-    .event-description h2 {
-      color: #2a7d2e;
-      margin-bottom: 20px;
-      font-size: 24px;
-      line-height: 1.4;
-    }
-    
     .image-gallery {
       display: flex;
       flex-wrap: wrap;
       margin: 0 -10px;
     }
-    
     .gallery-item {
       flex: 0 0 25%;
       padding: 10px;
-      box-sizing: border-box;
     }
-    
     .gallery-img {
       width: 100%;
       height: 200px;
       object-fit: cover;
       border-radius: 8px;
-      transition: transform 0.3s ease;
     }
-    
-    .gallery-img:hover {
-      transform: scale(1.03);
-    }
-    
     @media (max-width: 992px) {
-      .gallery-item {
-        flex: 0 0 50%;
-      }
+      .gallery-item { flex: 0 0 50%; }
     }
-    
     @media (max-width: 576px) {
-      .gallery-item {
-        flex: 0 0 100%;
-      }
-      
-      .event-description {
-        padding: 20px;
-      }
-      
-      .event-description h2 {
-        font-size: 20px;
-      }
+      .gallery-item { flex: 0 0 100%; }
     }
-    
-    .section-title {
-      text-align: center;
-      margin-bottom: 50px;
+
+    /* ✅ Professional Footer */
+    footer {
+      background: #1d1d1d;
+      color: #fff;
+      padding-top: 50px;
+      margin-top: 40px;
     }
-    
-    .section-title h2 {
-      color: #2a7d2e;
-      font-size: 36px;
+    .footer-area {
+      padding-bottom: 30px;
+    }
+    .footer-logo img {
+      max-width: 140px;
+      border-radius: 50%;
+    }
+    .footer-tittle h4 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: bold;
       position: relative;
-      display: inline-block;
-      padding-bottom: 15px;
     }
-    
-    .section-title h2:after {
+    .footer-tittle h4:after {
       content: '';
       position: absolute;
-      width: 60px;
+      width: 40px;
       height: 3px;
       background: #2a7d2e;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
+      bottom: -6px;
+    }
+    .footer-tittle ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .footer-tittle ul li {
+      margin-bottom: 8px;
+    }
+    .footer-tittle ul li a,
+    .footer-tittle ul li p {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+    .footer-tittle ul li a:hover {
+      color: #2a7d2e;
+    }
+    .footer-social {
+      text-align: center;
+      margin-top: 25px;
+    }
+    .footer-social a {
+      color: #fff;
+      font-size: 20px;
+      margin: 0 8px;
+      transition: 0.3s;
+    }
+    .footer-social a:hover {
+      color: #2a7d2e;
+    }
+    .footer-bottom {
+      background: #111;
+      padding: 15px 0;
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+      margin-top: 20px;
     }
   </style>
 </head>
 
 <body>
-  <div id="preloader-active">
-    <div class="preloader d-flex align-items-center justify-content-center">
-      <div class="preloader-inner position-relative">
-        <div class="preloader-circle"></div>
-        <div class="preloader-img pere-text">
-          <img src="assets/img/logo/logo.png" alt="Benevolent Trust Logo" />
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <!-- Header -->
   <header>
     <div class="header-area">
       <div class="main-header">
@@ -150,15 +177,7 @@
             <div class="row align-items-center">
               <div class="col-xl-2 col-lg-2">
                 <div class="logo d-flex align-items-center">
-                  <a href="index.html"><img src="assets/img/logo/logo.png" alt="Benevolent Trust Logo" /></a>
-                  <div class="social-icons ml-3">
-                    <a href="https://www.instagram.com/benevolenttrust/" target="_blank" aria-label="Instagram">
-                      <i class="fab fa-instagram" style="font-size: 24px; color: #E4405F;"></i>
-                    </a>
-                    <a href="https://www.facebook.com/share/1FKWZPLwLV/" target="_blank" class="ml-2" aria-label="Facebook">
-                      <i class="fab fa-facebook" style="font-size: 24px; color: #1877F2;"></i>
-                    </a>
-                  </div>
+                  <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo" /></a>
                 </div>
               </div>
               <div class="col-xl-10 col-lg-10">
@@ -168,11 +187,7 @@
                       <ul id="navigation">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li>
-                          <a href="program.html" class="nav-link-hover">
-                            Upcoming Event
-                          </a>
-                        </li>
+                        <li><a href="program.html">Upcoming Event</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                       </ul>
                     </nav>
@@ -188,240 +203,124 @@
       </div>
     </div>
   </header>
-  
-  <main>
-    <!-- Hero Section -->
-    <div class="slider-area2">
-      <div class="slider-height2 d-flex align-items-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="hero-cap hero-cap2 pt-20 text-center">
-                <h2>Environmental Initiatives</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Environment Programs Section -->
-    <div class="environment-section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Our Tree Plantation Drives</h2>
-        </div>
-        
-        <!-- Event 1 -->
-        <div class="event-card">
-          <div class="event-description">
-            <h2>जुगसलाई विधानसभा क्षेत्र के प्लासबनी गांव में बिदू चांदान ट्रस्ट फॉर ट्राइबल सेल्फ एंपावरमेंट के सहयोग से एक सांस्कृतिक कार्यक्रम एवं वृक्षारोपण कार्यक्रम आयोजन किया गया।</h2>
-            <p>A cultural program and tree plantation drive was organized in Plasbani village of Jugsalai assembly constituency in collaboration with Bidhu Chandan Trust for Tribal Self Empowerment.</p>
-          </div>
-          <div class="image-gallery">
-            <div class="gallery-item">
-              <img src="assets/img/Health/e3.jpeg" alt="Tree plantation event in Plasbani village" class="gallery-img">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/Health/e2.jpeg" alt="Participants planting trees" class="gallery-img">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/Health/e1.jpeg" alt="Cultural program during the event" class="gallery-img">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/Health/e4.jpeg" alt="Group photo after tree plantation" class="gallery-img">
-            </div>
-          </div>
-        </div>
-        
-        <!-- Event 2 -->
-        <div class="event-card">
-          <div class="event-description">
-            <h2>शहीद स्मारक समिति के सहयोग से पटमदा डिग्री कॉलेज, जाल्ला के मैट्रिक और इंटर के छात्र छात्रों को पौधा देकर सम्मानित किया जाएगा और बाद में वृक्षारोपण का कार्यक्रम आयोजन किया गया।</h2>
-            <p>In collaboration with Shaheed Smark Samiti, students of Patmada Degree College, Jalla were honored with saplings followed by a tree plantation program.</p>
-          </div>
-          <div class="image-gallery">
-            <div class="gallery-item">
-              <img src="assets/img/Health/en1.jpeg" alt="Students receiving saplings at Patmada College" class="gallery-img">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/Health/en2.jpeg" alt="Tree plantation at college campus" class="gallery-img">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/Health/en3.jpeg" alt="Participants in the plantation drive" class="gallery-img">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/Health/en4.jpeg" alt="Group photo with students" class="gallery-img">
-            </div>
-          </div>
-        </div>
-        
-        <!-- Event 3 -->
-        <div class="event-card">
-          <div class="event-description">
-            <h2>आदर्श सोसाइटी के सहयोग से टेल्को, बारीनगर में वृक्षारोपण का कार्यक्रम आयोजन किया गया।</h2>
-            <p>A tree plantation program was organized in Telco, Barinagar with the support of Aadarsh Society.</p>
-          </div>
-          <div class="image-gallery">
-            <div class="gallery-item">
-              <img src="assets/img/Health/een1.jpeg" alt="Tree plantation in Telco area" class="gallery-img">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/Health/een2.jpeg" alt="Volunteers planting trees" class="gallery-img">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/Health/een3.jpeg" alt="Community participation in plantation drive" class="gallery-img">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/Health/een4.jpeg" alt="Newly planted saplings" class="gallery-img">
-            </div>
-          </div>
-        </div>
-        
-        <!-- Event 4 -->
-        <div class="event-card">
-          <div class="event-description">
-            <h2>सरायकेला खरसवां के डिबाडीह गांव (राजनगर प्रखंड) में वीर शहीद दिबाकिसुन समिति के सहयोग से वृक्षारोपण का कार्यक्रम किया गया।</h2>
-            <p>A tree plantation program was conducted in Dibadih village (Rajnagar block) of Seraikela Kharsawan with the cooperation of Veer Shaheed Dibakisun Committee.</p>
-          </div>
-          <div class="image-gallery">
-            <div class="gallery-item">
-              <img src="assets/img/Health/ennn1.jpeg" alt="Plantation drive in Dibadih village" class="gallery-img">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/Health/ennn2.jpeg" alt="Villagers participating in plantation" class="gallery-img">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/Health/ennn3.jpeg" alt="Community members planting trees" class="gallery-img">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/img/Health/ennn4.jpeg" alt="Group photo after successful plantation" class="gallery-img">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
 
+  <!-- Heading -->
+  <div class="section-title">
+    <h2>Environmental Initiatives</h2>
+  </div>
+
+  <!-- Banner -->
+  <div class="env-banner">
+    <img src="assets/img/Health/envmain.jpg" alt="Environmental Banner">
+  </div>
+
+  <!-- Content -->
+  <div class="environment-section">
+    <div class="container">
+
+      <!-- Event 1 -->
+      <div class="event-card">
+        <div class="event-description">
+          <p>A cultural program and tree plantation drive was organized in Plasbani village of Jugsalai assembly constituency in collaboration with Bidhu Chandan Trust for Tribal Self Empowerment.</p>
+        </div>
+        <div class="image-gallery">
+          <div class="gallery-item"><img src="assets/img/Health/e3.jpeg" class="gallery-img"></div>
+          <div class="gallery-item"><img src="assets/img/Health/e2.jpeg" class="gallery-img"></div>
+          <div class="gallery-item"><img src="assets/img/Health/e1.jpeg" class="gallery-img"></div>
+          <div class="gallery-item"><img src="assets/img/Health/e4.jpeg" class="gallery-img"></div>
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="event-card">
+        <div class="event-description">
+          <p>In collaboration with Shaheed Smark Samiti, students of Patmada Degree College, Jalla were honored with saplings followed by a tree plantation program.</p>
+        </div>
+        <div class="image-gallery">
+          <div class="gallery-item"><img src="assets/img/Health/en1.jpeg" class="gallery-img"></div>
+          <div class="gallery-item"><img src="assets/img/Health/en2.jpeg" class="gallery-img"></div>
+          <div class="gallery-item"><img src="assets/img/Health/en3.jpeg" class="gallery-img"></div>
+          <div class="gallery-item"><img src="assets/img/Health/en4.jpeg" class="gallery-img"></div>
+        </div>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="event-card">
+        <div class="event-description">
+          <p>A tree plantation program was organized in Telco, Barinagar with the support of Aadarsh Society.</p>
+        </div>
+        <div class="image-gallery">
+          <div class="gallery-item"><img src="assets/img/Health/een1.jpeg" class="gallery-img"></div>
+          <div class="gallery-item"><img src="assets/img/Health/een2.jpeg" class="gallery-img"></div>
+          <div class="gallery-item"><img src="assets/img/Health/een3.jpeg" class="gallery-img"></div>
+          <div class="gallery-item"><img src="assets/img/Health/een4.jpeg" class="gallery-img"></div>
+        </div>
+      </div>
+
+      <!-- Event 4 -->
+      <div class="event-card">
+        <div class="event-description">
+          <p>A tree plantation program was conducted in Dibadih village (Rajnagar block) of Seraikela Kharsawan with the cooperation of Veer Shaheed Dibakisun Committee.</p>
+        </div>
+        <div class="image-gallery">
+          <div class="gallery-item"><img src="assets/img/Health/ennn1.jpeg" class="gallery-img"></div>
+          <div class="gallery-item"><img src="assets/img/Health/ennn2.jpeg" class="gallery-img"></div>
+          <div class="gallery-item"><img src="assets/img/Health/ennn3.jpeg" class="gallery-img"></div>
+          <div class="gallery-item"><img src="assets/img/Health/ennn4.jpeg" class="gallery-img"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ✅ Footer -->
   <footer>
-    <div class="footer-wrapper section-bg2" data-background="assets/img/gallery/footer_bg.png">
-      <!-- Footer Top-->
-      <div class="footer-area footer-padding">
-        <div class="container">
-          <div class="row d-flex justify-content-between">
-            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-              <div class="single-footer-caption mb-50">
-                <div class="single-footer-caption mb-30">
-                  <div class="footer-tittle">
-                    <div class="footer-logo mb-20">
-                      <a href="index.html"><img src="assets/img/logo/logo.png" alt="Benevolent Trust Logo" style="border-radius: 50%;" /></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center text-md-left mb-4 mb-md-0">
+            <div class="footer-logo">
+              <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo" /></a>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-              <div class="single-footer-caption mb-50">
-                <div class="footer-tittle">
-                  <h4>Contact Info</h4>
-                  <ul>
-                    <li>
-                      <p>
-                        Address : Slag Road, Sakchi, Jamshedpur – 831001.
-                      </p>
-                    </li>
-                    <li><a href="tel:+919097584707">Phone: +91 90975 84707</a></li>
-                    <li><a href="mailto: info@benevolenttrust.in">Email: info@benevolenttrust.in</a></li>
-                  </ul>
-                </div>
-              </div>
+          </div>
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <div class="footer-tittle">
+              <h4>Contact Info</h4>
+              <ul>
+                <li><p>Address : Slag Road, Sakchi, Jamshedpur – 831001.</p></li>
+                <li><a href="tel:+919097584707">Phone: +91 90975 84707</a></li>
+                <li><a href="mailto:info@benevolenttrust.in">Email: info@benevolenttrust.in</a></li>
+              </ul>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-              <div class="single-footer-caption mb-50">
-                <div class="footer-tittle">
-                  <h4>Important Link</h4>
-                  <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="program.html">Upcoming Event</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
+          </div>
+          <div class="col-md-4 text-center text-md-right">
+            <div class="footer-tittle">
+              <h4>Important Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="program.html">Upcoming Event</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-      <!-- footer-bottom -->
-      <div class="footer-bottom-area">
-        <div class="container">
-          <div class="footer-border">
-            <div class="row d-flex justify-content-center align-items-center">
-              <div class="col">
-                <div class="footer-social d-flex justify-content-center">
-                  <a href="https://www.facebook.com/profile.php?id=100085929879080&mibextid=ZbWKwL" target="_blank"
-                    title="Visit our Facebook profile" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="https://www.instagram.com/benevolenttrust?utm_source=qr&igsh=dXhqNXE5b2g2M2lx" target="_blank" 
-                     title="Visit our Instagram profile" aria-label="Instagram" class="ml-3">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+
+        <!-- Social Icons -->
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=100085929879080" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/benevolenttrust" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Benevolent Trust. All Rights Reserved.
     </div>
   </footer>
 
-  <!-- Scroll Up -->
-  <div id="back-top">
-    <a title="Go to Top" href="#" aria-label="Scroll to top"> <i class="fas fa-level-up-alt"></i></a>
-  </div>
-
-  <!-- JS here -->
-  <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-  <!-- Jquery, Popper, Bootstrap -->
+  <!-- JS -->
   <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-  <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
-  <!-- Jquery Mobile Menu -->
-  <script src="./assets/js/jquery.slicknav.min.js"></script>
-
-  <!-- Jquery Slick , Owl-Carousel Plugins -->
-  <script src="./assets/js/owl.carousel.min.js"></script>
-  <script src="./assets/js/slick.min.js"></script>
-  <!-- One Page, Animated-HeadLin -->
-  <script src="./assets/js/wow.min.js"></script>
-  <script src="./assets/js/animated.headline.js"></script>
-  <script src="./assets/js/jquery.magnific-popup.js"></script>
-
-  <!-- Date Picker -->
-  <script src="./assets/js/gijgo.min.js"></script>
-  <!-- Nice-select, sticky -->
-  <script src="./assets/js/jquery.nice-select.min.js"></script>
-  <script src="./assets/js/jquery.sticky.js"></script>
-  <!-- Progress -->
-  <script src="./assets/js/jquery.barfiller.js"></script>
-
-  <!-- counter , waypoint,Hover Direction -->
-  <script src="./assets/js/jquery.counterup.min.js"></script>
-  <script src="./assets/js/waypoints.min.js"></script>
-  <script src="./assets/js/jquery.countdown.min.js"></script>
-  <script src="./assets/js/hover-direction-snake.min.js"></script>
-
-  <!-- contact js -->
-  <script src="./assets/js/contact.js"></script>
-  <script src="./assets/js/jquery.form.js"></script>
-  <script src="./assets/js/jquery.validate.min.js"></script>
-  <script src="./assets/js/mail-script.js"></script>
-  <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-
-  <!-- Jquery Plugins, main Jquery -->
-  <script src="./assets/js/plugins.js"></script>
-  <script src="./assets/js/main.js"></script>
 </body>
-
 </html>
